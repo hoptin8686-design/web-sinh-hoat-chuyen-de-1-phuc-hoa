@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nội Dung Sinh Hoạt Chuyên Đề 1 - Chi Bộ Trường THPT Phục Hòa</title>
+  <meta name="description" content="Chuyên đề 1: Phát huy vai trò tiên phong, gương mẫu của đảng viên trong chuyển đổi số và ứng dụng trí tuệ nhân tạo trong quản lý, dạy học năm học 2026-2027. Kèm bản chuẩn quy trình tạo nhanh bài kiểm tra trên Word bằng AI.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Times+New+Roman&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Thanh đọc tiến trình -->
+  <div id="reading-progress"></div>
+
+  <!-- Banner Đảng Ủy & Chi Bộ Trên Cùng -->
+  <div class="top-party-bar">
+    <div class="top-party-inner">
+      <div class="top-party-badge">
+        <span class="hammer-sickle">☭</span>
+        <span>ĐẢNG BỘ XÃ PHỤC HÒA — CHI BỘ TRƯỜNG THPT PHỤC HÒA</span>
+      </div>
+      <div>
+        <span>SINH HOẠT CHUYÊN ĐỀ QUÝ IV / THÁNG 11 NĂM 2026</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Điều Hướng Sticky -->
+  <header class="navbar-container">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-info">
+        <div class="brand-logo-badge">CĐ1</div>
+        <div class="brand-text-col">
+          <h1>THPT Phục Hòa</h1>
+          <span>Chuyên Đề Đổi Mới Giáo Dục Số 2026 – 2027</span>
+        </div>
+      </a>
+
+      <!-- Menu Tabs -->
+      <ul class="nav-menu">
+        <li><a href="#tab-report" class="nav-link active" data-tab="report" onclick="switchTab('report')">📖 Toàn Văn Báo Cáo</a></li>
+        <li><a href="#tab-guide" class="nav-link" data-tab="guide" onclick="switchTab('guide')">⚡ Bản Chuẩn Tạo Đề Word (5 Bước)</a></li>
+        <li><a href="#tab-prompts" class="nav-link" data-tab="prompts" onclick="switchTab('prompts')">💡 Thư Viện Prompt AI</a></li>
+        <li><a href="#tab-formatter" class="nav-link" data-tab="formatter" onclick="switchTab('formatter')">🛠️ Công Cụ Chuẩn Hóa Cú Pháp Word</a></li>
+        <li><a href="#tab-sample" class="nav-link" data-tab="sample" onclick="switchTab('sample')">📝 Đề Thi Mẫu & Đáp Án</a></li>
+        <li><a href="#tab-plan-mc" class="nav-link" data-tab="plan-mc" onclick="switchTab('plan-mc')">📋 Kế Hoạch & Lời Dẫn MC</a></li>
+      </ul>
+
+      <!-- Nút Tải Word Nhanh -->
+      <div class="nav-actions">
+        <a href="Ban_Chuan_Quy_Trinh_Tao_De_Kiem_Tra_Word_AI.docx" download class="btn btn-accent" title="Tải Bản chuẩn quy trình tạo đề Word">
+          📥 Bản Chuẩn Word (.docx)
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-inner">
+      <div class="hero-meta-badge">
+        🏛️ Tài liệu sinh hoạt chi bộ chính thức • Ngày 03/11/2026
+      </div>
+      <h1 class="hero-title">
+        PHÁT HUY VAI TRÒ TIÊN PHONG, GƯƠNG MẪU CỦA ĐẢNG VIÊN TRONG <span class="highlight">CHUYỂN ĐỔI SỐ</span> VÀ ỨNG DỤNG <span class="highlight">TRÍ TUỆ NHÂN TẠO</span> TRONG QUẢN LÝ, DẠY HỌC
+      </h1>
+      <p class="hero-subtitle">
+        Đổi mới phương pháp dạy học theo định hướng phát triển phẩm chất, năng lực học sinh vùng cao. 
+        Tích hợp Bản Chuẩn Quy trình 5 Bước Tạo Nhanh Bài Kiểm Tra Trên Microsoft Word bằng công nghệ AI, 
+        chuẩn hóa ma trận, bản đặc tả và kết nối trực tiếp các nền tảng khảo thí số (Azota, Submite, Quizizz).
+      </p>
+
+      <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <button class="btn btn-primary" style="padding:10px 20px; font-size:0.95rem;" onclick="switchTab('report')">
+          📖 Xem Báo Cáo Chi Bộ
+        </button>
+        <button class="btn btn-gold" style="padding:10px 20px; font-size:0.95rem;" onclick="switchTab('guide')">
+          ⚡ Xem Quy Trình 5 Bước Tạo Đề Word
+        </button>
+        <a href="Bao_Cao_Sinh_Hoat_Chuyen_De_1_THPT_Phuc_Hoa.docx" download class="btn btn-outline" style="background:rgba(255,255,255,0.1); color:#fff; border-color:rgba(255,255,255,0.3);">
+          📥 Tải Báo Cáo Word
+        </a>
+      </div>
+
+      <!-- Quick Metrics -->
+      <div class="hero-quick-stats">
+        <div class="stat-card">
+          <div class="stat-icon">⏱️</div>
+          <div class="stat-info">
+            <h4>Tiết Kiệm 40 - 50%</h4>
+            <p>Thời gian hành chính & soạn giáo án, đề thi</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">⚡</div>
+          <div class="stat-info">
+            <h4>5 Bước Thần Tốc</h4>
+            <p>Quy trình tạo bài kiểm tra chuẩn hóa Word trong 10 phút</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🛡️</div>
+          <div class="stat-info">
+            <h4>100% Đảng Viên</h4>
+            <p>Ký cam kết an toàn thông tin & đạo đức số</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🎯</div>
+          <div class="stat-info">
+            <h4>Chuẩn Ma Trận</h4>
+            <p>Bám sát cấu trúc đề kiểm tra đánh giá mới của Bộ GD&ĐT</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN TAB CONTENT VIEWPORT -->
+  <div id="main-tab-viewport"></div>
+
+  <main class="main-container">
+
+    <!-- =========================================================
+         TAB 1: TOÀN VĂN BÁO CÁO CHUYÊN ĐỀ 1
+         ========================================================= -->
+    <section id="tab-report" class="tab-content-panel active">
+      <div class="doc-sheet">
+
+        <!-- Thể thức văn bản Đảng chính thức -->
+        <div class="doc-sheet-header">
+          <div class="doc-col-left">
+            <div class="org-parent">ĐẢNG BỘ XÃ PHỤC HÒA</div>
+            <div class="org-child">CHI BỘ TRƯỜNG THPT PHỤC HÒA</div>
+            <div style="font-weight:bold;">*</div>
+            <div class="doc-number">Số: &nbsp; &nbsp; &nbsp; -BC/CB</div>
+          </div>
+          <div class="doc-col-right">
+            <div class="motto-party">ĐẢNG CỘNG SẢN VIỆT NAM</div>
+            <div class="doc-date">Phục Hòa, ngày 28 tháng 10 năm 2026</div>
+          </div>
+        </div>
+
+        <div class="doc-title-block">
+          <h2 class="doc-main-title">BÁO CÁO</h2>
+          <div class="doc-sub-title">
+            Chuyên đề 1: Phát huy vai trò tiên phong, gương mẫu của đảng viên trong chuyển đổi số và ứng dụng trí tuệ nhân tạo trong quản lý, dạy học năm học 2026 – 2027
+          </div>
+          <div style="font-style:italic; font-size:0.9rem; color:#64748b; margin-top:6px;">
+            (Tài liệu phục vụ buổi sinh hoạt chuyên đề Chi bộ tháng 11/2026 vào hồi 14h00 ngày 03/11/2026)
+          </div>
+        </div>
+
+        <div class="callout-box quote">
+          “Chuyển đổi số và ứng dụng Trí tuệ nhân tạo (AI) không chỉ là nhiệm vụ chuyên môn thuần túy, mà là nhiệm vụ chính trị trọng tâm của mỗi cán bộ, đảng viên trong giai đoạn phát triển mới. Đảng viên phải là ngọn cờ đi đầu, gương mẫu trong học tập số, dũng cảm xóa bỏ tâm lý ngại công nghệ, lan tỏa cảm hứng đổi mới sáng tạo đến toàn thể giáo viên và học sinh.”
+        </div>
+
+        <!-- MỤC I -->
+        <div class="report-section">
+          <div class="section-head-badge">
+            I. NỘI DUNG CHI TIẾT BUỔI TRAO ĐỔI CHUYÊN ĐỀ
+          </div>
+
+          <!-- Phần 1 -->
+          <div class="part-card">
+            <div class="part-card-title">
+              <span class="badge-num">1</span>
+              Phần 1: Đặt vấn đề & Khảo sát thực trạng tại Trường THPT Phục Hòa
+            </div>
+            
+            <p><strong>* Thực trạng giảng dạy tại trường THPT Phục Hòa:</strong></p>
+            <ul style="margin: 8px 0 16px 20px; line-height: 1.7;">
+              <li><strong>Áp lực thời gian:</strong> Giáo viên mất nhiều thời gian cho các công tác chuẩn bị hành chính, tìm kiếm tài liệu phân tán, soạn giáo án và biên soạn đề kiểm tra thủ công. Thiết kế đồ dùng dạy học trực quan còn hạn chế do thiếu trang thiết bị chuyên dụng tại địa phương.</li>
+              <li><strong>Đặc thù học sinh vùng cao:</strong> Học sinh (đặc biệt là học sinh đồng bào dân tộc thiểu số tại địa bàn huyện Quảng Hòa) đôi khi còn rụt rè, khả năng tự học ở nhà còn gặp nhiều khó khăn do thiếu sự kèm cặp sát sao và môi trường học liệu trực quan, sinh động.</li>
+            </ul>
+
+            <p><strong>* Cơ hội mang lại từ Trí tuệ nhân tạo (AI):</strong></p>
+            <ul style="margin: 8px 0 16px 20px; line-height: 1.7;">
+              <li><strong>Tối ưu hóa năng suất:</strong> AI hỗ trợ giải phóng sức lao động, giúp thầy cô tiết kiệm từ <strong>40% - 50% thời gian</strong> hành chính, chuẩn bị tài liệu bài giảng, lập ma trận và soạn đề thi.</li>
+              <li><strong>Trực quan hóa bài học:</strong> Tạo ra các bài giảng sinh động, hình ảnh minh họa chân thực, video mô phỏng trực quan giúp học sinh vùng cao dễ dàng tiếp cận những kiến thức trừu tượng, khơi dậy tinh thần say mê học tập.</li>
+            </ul>
+          </div>
+
+          <!-- Phần 2 -->
+          <div class="part-card">
+            <div class="part-card-title">
+              <span class="badge-num">2</span>
+              Phần 2: Các ứng dụng cụ thể của AI trong các khâu dạy học
+            </div>
+            <p style="font-style:italic; color:#64748b; margin-bottom:12px;">(Tập trung vào các công cụ miễn phí, dễ sử dụng, hoàn toàn phù hợp với điều kiện cơ sở vật chất của giáo viên phổ thông)</p>
+
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px;">
+              <div style="background:#eff6ff; padding:16px; border-radius:8px; border-left:4px solid #1d4ed8;">
+                <h4 style="color:#1e40af; margin-bottom:6px;">1. Soạn giáo án & KHBD (CV 5512)</h4>
+                <p style="font-size:0.85rem; color:#475569; margin-bottom:8px;"><strong>Công cụ:</strong> Gemini, ChatGPT, Claude.</p>
+                <p style="font-size:0.9rem; line-height:1.5;">Yêu cầu AI viết khung giáo án chuẩn theo 04 hoạt động sư phạm (Khởi động, Hình thành kiến thức, Luyện tập, Vận dụng). Tinh chỉnh mức độ sát với học sinh THPT Phục Hòa.</p>
+              </div>
+
+              <div style="background:#fef3c7; padding:16px; border-radius:8px; border-left:4px solid #d97706;">
+                <h4 style="color:#b45309; margin-bottom:6px;">2. Tạo học liệu & Slide trực quan</h4>
+                <p style="font-size:0.85rem; color:#475569; margin-bottom:8px;"><strong>Công cụ:</strong> Canva AI, Copilot Designer, Gamma.</p>
+                <p style="font-size:0.9rem; line-height:1.5;">Với các môn Địa lý, Lịch sử, Sinh học, Vật lý, AI tạo ra sơ đồ tư duy (mindmap), infographics, tranh minh họa sắc nét và bài thuyết trình chuyên nghiệp chỉ trong vài phút.</p>
+              </div>
+
+              <div style="background:#f0fdf4; padding:16px; border-radius:8px; border-left:4px solid #15803d;">
+                <h4 style="color:#14532d; margin-bottom:6px;">3. Ra đề thi, ma trận kiểm tra chuẩn Word</h4>
+                <p style="font-size:0.85rem; color:#475569; margin-bottom:8px;"><strong>Công cụ:</strong> Quizizz AI, Gemini, Word Formatter.</p>
+                <p style="font-size:0.9rem; line-height:1.5;">Sinh câu hỏi theo 4 mức độ tư duy (Biết, Hiểu, Vận dụng, Vận dụng cao), xuất định dạng chuẩn Microsoft Word sẵn sàng in ấn hoặc đẩy lên Azota, Submite.</p>
+              </div>
+
+              <div style="background:#faf5ff; padding:16px; border-radius:8px; border-left:4px solid #9333ea;">
+                <h4 style="color:#6b21a8; margin-bottom:6px;">4. Trợ lý học tập cá nhân cho học sinh</h4>
+                <p style="font-size:0.85rem; color:#475569; margin-bottom:8px;"><strong>Công cụ:</strong> Ứng dụng AI trên điện thoại/máy tính.</p>
+                <p style="font-size:0.9rem; line-height:1.5;">Khuyến khích học sinh dùng AI giải đáp bài toán khó, luyện phát âm tiếng Anh, giải thích thuật ngữ văn học; rèn luyện tư duy đặt câu hỏi chuẩn mực ngoài giờ lên lớp.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phần 3 -->
+          <div class="part-card">
+            <div class="part-card-title">
+              <span class="badge-num">3</span>
+              Phần 3: Thảo luận, thực hành tại chỗ và chia sẻ kinh nghiệm
+            </div>
+            <ul style="margin: 8px 0 16px 20px; line-height: 1.7;">
+              <li><strong>Thực hành mẫu (Demo trực tiếp):</strong> Cán bộ phụ trách CNTT hoặc giáo viên cốt cán thực hiện thao tác trực tiếp trên máy chiếu: Từ việc nhập câu lệnh (prompt) sư phạm trên máy tính/điện thoại đến khi thu về sản phẩm hoàn chỉnh (kế hoạch bài dạy, bộ câu hỏi trắc nghiệm Word).</li>
+              <li><strong>Thảo luận bàn tròn:</strong> Tập trung giải quyết 2 câu hỏi then chốt:
+                <br><em>(1) Khó khăn lớn nhất khi thầy/cô tiếp cận AI là gì?</em> (Tâm lý e ngại, kỹ năng gõ lệnh, thiết bị).
+                <br><em>(2) Môn học của tôi có thể ứng dụng AI vào phần nào ngay trong tuần tới?</em></li>
+              <li><strong>Nguyên tắc cốt lõi:</strong> <span style="color:#991b1b; font-weight:700;">AI là công cụ hỗ trợ - Quyết định cuối cùng thuộc về tư duy sư phạm của người thầy.</span> Giáo viên bắt buộc phải kiểm chứng toàn bộ thông tin do AI cung cấp trước khi đưa vào giảng dạy.</li>
+            </ul>
+          </div>
+
+          <!-- Phần 4 -->
+          <div class="part-card">
+            <div class="part-card-title">
+              <span class="badge-num">4</span>
+              Phần 4: Nâng cao trách nhiệm an toàn thông tin và đạo đức số
+            </div>
+            
+            <div class="callout-box warning">
+              <strong>Quan điểm chỉ đạo xuyên suốt:</strong> “An toàn thông tin đi trước một bước; đạo đức số là gốc rễ của người học trong kỷ nguyên số.”
+            </div>
+
+            <ul style="margin: 8px 0 16px 20px; line-height: 1.7;">
+              <li><strong>Bảo mật dữ liệu nhà trường:</strong> Quản lý nghiêm ngặt hệ thống CSDL học sinh, điểm số, hồ sơ điện tử vnEdu, CSDL ngành. Phân quyền rõ ràng đối với Ban Giám hiệu, giáo viên bộ môn và nhân viên giáo vụ (tránh rò rỉ hoặc chỉnh sửa trái phép).</li>
+              <li><strong>Quản lý tài khoản và mật khẩu 2 lớp (2FA):</strong> Hướng dẫn 100% cán bộ, giáo viên kích hoạt tính năng bảo mật 2 lớp trên Google Workspace, Microsoft 365, SmartCA, VNeID. Nâng cao cảnh giác trước thủ đoạn lừa đảo qua mạng tinh vi (giả mạo tin nhắn nhà trường, báo viện cấp cứu, mạo danh công an...).</li>
+              <li><strong>Phòng chống virus, mã độc qua thiết bị USB:</strong> Cẩn trọng khi cắm USB, ổ cứng di động vào máy tính trường để phòng ngừa virus, mã độc tống tiền (ransomware) phá hoại dữ liệu bài soạn và đề kiểm tra.</li>
+              <li><strong>Văn hóa mạng xã hội cho học sinh:</strong> Tuyên truyền thông điệp <em>"Phát ngôn chuẩn mực - Không chia sẻ tin giả - Nói không với bạo lực mạng (cyberbullying)"</em>. Đặc biệt quan tâm bảo vệ học sinh dân tộc thiểu số trước các luồng thông tin xấu độc.</li>
+              <li><strong>Đạo đức học thuật trong kỷ nguyên AI:</strong> Giáo viên tôn trọng bản quyền, không sao chép nguyên văn. Học sinh phải trung thực: chỉ dùng AI để gợi ý ý tưởng, tuyệt đối không sao chép văn mẫu, không gian lận trong kiểm tra và thi cử.</li>
+            </ul>
+          </div>
+
+          <!-- Phần 5 -->
+          <div class="part-card">
+            <div class="part-card-title">
+              <span class="badge-num">5</span>
+              Phần 5: Phát huy vai trò tiên phong, gương mẫu của đảng viên trong chuyển đổi số và AI
+            </div>
+            <p>Trong công cuộc chuyển đổi số tại đơn vị, yếu tố công nghệ là phương tiện, cốt lõi thành bại là ở <strong>đội ngũ con người</strong>. Mỗi cán bộ, đảng viên trong Chi bộ trường THPT Phục Hòa phải luôn là "ngọn đuốc đi đầu":</p>
+
+            <div style="margin: 16px 0;">
+              <p><strong>1. Tiên phong trong tư duy và tự học nâng cao năng lực số:</strong></p>
+              <p style="margin-left: 20px; color:#334155;">Chủ động tự học, tự bồi dưỡng các công cụ số mới. Mỗi đảng viên trực tiếp giảng dạy phải là người đầu tiên tại tổ chuyên môn đăng ký thực hiện các tiết dạy mẫu ứng dụng thành công CNTT và AI.</p>
+
+              <p style="margin-top: 10px;"><strong>2. Gương mẫu chấp hành kỷ luật thông tin và đạo đức số:</strong></p>
+              <p style="margin-left: 20px; color:#334155;">Gương mẫu tuyệt đối trong việc sử dụng mạng xã hội; không đăng tải, bình luận thông tin sai sự thật; tuân thủ nghiêm quy định bảo mật cơ sở dữ liệu nhà trường; xây dựng văn hóa ứng xử văn minh trên không gian số.</p>
+
+              <p style="margin-top: 10px;"><strong>3. Tiên phong hỗ trợ, kèm cặp đồng nghiệp ('Đảng viên đi trước, làng nước theo sau'):</strong></p>
+              <p style="margin-left: 20px; color:#334155;">Đảng viên am hiểu công nghệ sẵn sàng "cầm tay chỉ việc", hỗ trợ các giáo viên lớn tuổi hoặc còn e ngại công nghệ trong tổ bộ môn cùng làm quen và sử dụng thành thạo AI.</p>
+            </div>
+
+            <div class="callout-box success">
+              <strong>Giải pháp thực hiện:</strong> Đưa mức độ tiên phong ứng dụng công nghệ số và hiệu quả công tác thành tiêu chí xếp loại chất lượng đảng viên cuối năm. Bí thư Chi bộ, Ban Giám hiệu và Chi ủy gương mẫu đi đầu trong quản trị số và điều hành công việc trực tuyến.
+            </div>
+          </div>
+        </div>
+
+        <!-- MỤC II: KẾT QUẢ, SẢN PHẨM CẦN ĐẠT -->
+        <div class="report-section">
+          <div class="section-head-badge">
+            II. KẾT QUẢ VÀ SẢN PHẨM CỤ THỂ CẦN ĐẠT SAU CHUYÊN ĐỀ
+          </div>
+
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th style="width:25%;">Cấp thực hiện</th>
+                <th style="width:50%;">Danh mục sản phẩm cụ thể cần đạt</th>
+                <th style="width:25%;">Thời hạn hoàn thành</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Cấp Nhà trường</strong><br><span style="font-size:0.85rem; color:#64748b;">(Chi bộ & Ban Giám hiệu)</span></td>
+                <td>
+                  • 01 Báo cáo đánh giá thực trạng và Kế hoạch chiến lược ứng dụng AI, chuyển đổi số năm học 2026-2027.<br>
+                  • Ban hành Quy chế nội bộ về bảo mật CSDL và quy tắc ứng xử trên mạng xã hội.<br>
+                  • 100% cán bộ, giáo viên, nhân viên ký cam kết đạo đức số và an toàn mạng.
+                </td>
+                <td><strong>Tháng 11/2026</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Cấp Tổ chuyên môn & Giáo viên</strong></td>
+                <td>
+                  • Mỗi tổ chuyên môn đóng góp tối thiểu <strong>03 - 05 Kế hoạch bài dạy mẫu (CV 5512)</strong> ứng dụng hiệu quả AI.<br>
+                  • Ngân hàng câu hỏi kiểm tra đánh giá được số hóa chuẩn quy cách Microsoft Word.<br>
+                  • Toàn trường tổ chức từ <strong>04 - 06 tiết dạy minh họa</strong> cấp trường áp dụng AI/CNTT (KHTN, KHXH, Ngoại ngữ).
+                </td>
+                <td><strong>Học kỳ I</strong><br><span style="font-size:0.85rem; color:#64748b;">(Năm học 2026-2027)</span></td>
+              </tr>
+              <tr>
+                <td><strong>Đối với Học sinh</strong></td>
+                <td>
+                  • 100% học sinh được hướng dẫn kỹ năng khai thác trợ lý ảo AI trung thực, lành mạnh để tự học ở nhà.<br>
+                  • Thành lập các <strong>Đội xung kích công nghệ số và an toàn mạng</strong> do Đoàn trường phụ trách để hỗ trợ phòng ngừa rủi ro trực tuyến.
+                </td>
+                <td><strong>Xuyên suốt năm học</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Chữ ký Ban Chi Ủy -->
+        <div class="signature-block">
+          <div class="signature-left">
+            <strong>Nơi nhận:</strong><br>
+            - Đảng ủy viên phụ trách chi bộ;<br>
+            - Ban Giám hiệu nhà trường;<br>
+            - Toàn thể đảng viên trong chi bộ;<br>
+            - Lưu: Chi bộ.
+          </div>
+          <div class="signature-right">
+            <div class="signer-title">T/M CHI BỘ<br>BÍ THƯ</div>
+            <div class="signer-name">Hoàng Trung Kiên</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+         TAB 2: BẢN CHUẨN 5 BƯỚC TẠO ĐỀ TRÊN WORD & AI
+         ========================================================= -->
+    <section id="tab-guide" class="tab-content-panel">
+      <div class="doc-sheet">
+
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-bottom:20px;">
+          <div>
+            <span class="step-tag">Cẩm Nang Sư Phạm Thực Chiến 2026</span>
+            <h2 style="font-size:1.6rem; color:#1e40af; margin-top:6px;">QUY TRÌNH 5 BƯỚC TẠO NHANH BÀI KIỂM TRA TRÊN WORD ỨNG DỤNG AI</h2>
+            <p style="color:#64748b;">Giải pháp chuẩn hóa ma trận, soạn thảo siêu tốc và kết nối trực tiếp hệ thống thi số</p>
+          </div>
+          <a href="Ban_Chuan_Quy_Trinh_Tao_De_Kiem_Tra_Word_AI.docx" download class="btn btn-accent">
+            📥 Tải Bản Chuẩn Word (.docx)
+          </a>
+        </div>
+
+        <div class="callout-box info">
+          <strong>Mục tiêu then chốt:</strong> Hướng dẫn giáo viên tạo ra bài kiểm tra định kỳ (15 phút, 1 tiết, giữa kỳ, học kỳ) chuẩn 100% quy định Bộ GD&ĐT chỉ trong <strong>10 - 15 phút</strong> (thay vì 2-3 giờ gõ thủ công), đồng thời chuẩn hóa định dạng Microsoft Word để đẩy trực tiếp 1-click vào Azota, Submite, Google Forms hoặc in ấn không lỗi font!
+        </div>
+
+        <!-- Quy trình 5 bước dạng thẻ tương tác -->
+        <div class="process-stepper">
+
+          <!-- BƯỚC 1 -->
+          <div class="step-card">
+            <div class="step-card-header">
+              <div class="step-badge-group">
+                <div class="step-number">1</div>
+                <div>
+                  <div class="step-title">LẬP MA TRẬN VÀ BẢN ĐẶC TẢ ĐỀ KIỂM TRA CHUẨN</div>
+                  <div style="font-size:0.8rem; color:#64748b;">Xác định tỉ lệ mức độ tư duy & cấu trúc 3 phần mới của Bộ GD&ĐT</div>
+                </div>
+              </div>
+              <span class="step-tag">Khung Chuẩn GDPT 2018</span>
+            </div>
+            <div class="step-card-body">
+              <p>Mỗi đề kiểm tra cần được xây dựng theo đúng tỉ lệ 4 mức độ đánh giá năng lực:</p>
+              
+              <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:12px; margin:16px 0;">
+                <div style="background:#eff6ff; padding:12px; border-radius:6px; text-align:center; border:1px solid #bfdbfe;">
+                  <div style="font-size:1.4rem; font-weight:800; color:#1d4ed8;">40%</div>
+                  <strong style="color:#1e40af;">Nhận Biết</strong>
+                  <p style="font-size:0.8rem; color:#475569; margin-top:4px;">Nhắc lại kiến thức, nhận diện định nghĩa, công thức cơ bản.</p>
+                </div>
+                <div style="background:#f0fdf4; padding:12px; border-radius:6px; text-align:center; border:1px solid #bbf7d0;">
+                  <div style="font-size:1.4rem; font-weight:800; color:#15803d;">30%</div>
+                  <strong style="color:#14532d;">Thông Hiểu</strong>
+                  <p style="font-size:0.8rem; color:#475569; margin-top:4px;">Giải thích ý nghĩa, phân biệt khái niệm, suy luận trực tiếp.</p>
+                </div>
+                <div style="background:#fef3c7; padding:12px; border-radius:6px; text-align:center; border:1px solid #fde68a;">
+                  <div style="font-size:1.4rem; font-weight:800; color:#d97706;">20%</div>
+                  <strong style="color:#b45309;">Vận Dụng</strong>
+                  <p style="font-size:0.8rem; color:#475569; margin-top:4px;">Áp dụng giải quyết tình huống, bài toán bài tập thực tế.</p>
+                </div>
+                <div style="background:#fef2f2; padding:12px; border-radius:6px; text-align:center; border:1px solid #fecaca;">
+                  <div style="font-size:1.4rem; font-weight:800; color:#dc2626;">10%</div>
+                  <strong style="color:#991b1b;">Vận Dụng Cao</strong>
+                  <p style="font-size:0.8rem; color:#475569; margin-top:4px;">Phân tích tổng hợp, giải quyết vấn đề mới liên môn phức hợp.</p>
+                </div>
+              </div>
+
+              <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:14px;">
+                <strong style="color:#0f172a;">Cấu trúc 03 Phần Đề Thi Mới (Áp dụng từ năm 2025/2026):</strong>
+                <ul style="margin: 8px 0 0 20px; font-size:0.92rem; line-height:1.6;">
+                  <li><strong>Phần I: Câu trắc nghiệm nhiều phương án lựa chọn</strong> (Học sinh chọn 1 trong 4 phương án A, B, C, D). Mỗi câu 0,25 điểm.</li>
+                  <li><strong>Phần II: Câu trắc nghiệm Đúng/Sai</strong> (Mỗi câu gồm 4 lệnh hỏi a, b, c, d; học sinh chọn Đúng hoặc Sai cho từng lệnh). Đánh giá tư duy logic sâu sắc.</li>
+                  <li><strong>Phần III: Câu trắc nghiệm trả lời ngắn hoặc Tự luận</strong> (Học sinh điền số, kết quả hoặc trình bày các bước giải quyết).</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- BƯỚC 2 -->
+          <div class="step-card">
+            <div class="step-card-header">
+              <div class="step-badge-group">
+                <div class="step-number">2</div>
+                <div>
+                  <div class="step-title">THIẾT KẾ CÂU LỆNH (PROMPT) AI CHUẨN SƯ PHẠM</div>
+                  <div style="font-size:0.8rem; color:#64748b;">Công thức 5 thành tố để AI sinh câu hỏi chính xác, không bị ảo giác</div>
+                </div>
+              </div>
+              <span class="step-tag" style="background:#fef3c7; color:#b45309;">Prompt Engineering</span>
+            </div>
+            <div class="step-card-body">
+              <p>Để AI (Gemini, ChatGPT, Claude) trả về kết quả đạt chuẩn ngay từ lần đầu tiên mà không phải sửa nhiều, hãy áp dụng công thức 5 thành tố:</p>
+              
+              <div style="margin: 12px 0; padding:12px; background:#fffbeb; border:1px dashed #f59e0b; border-radius:6px; font-weight:600; font-size:0.92rem;">
+                [VAI TRÒ SƯ PHẠM] + [NHIỆM VỤ CỤ THỂ] + [MA TRẬN NỘI DUNG] + [RÀO CHẮN SƯ PHẠM] + [QUY CHUẨN ĐẦU RA WORD]
+              </div>
+
+              <div class="prompt-box">
+                <button class="prompt-copy-btn" onclick="copyPromptContent(this)">📋 Sao chép</button>
+Bạn là chuyên gia khảo thí môn Tin học cấp THPT theo chương trình GDPT 2018 (bộ sách Kết nối tri thức).
+Hãy tạo cho tôi 08 câu trắc nghiệm nhiều lựa chọn và 02 câu Đúng/Sai cho Chủ đề: "Ứng dụng Trí tuệ nhân tạo (AI) và Đạo đức số" lớp 10.
+Ma trận yêu cầu:
+- 4 câu Nhận biết, 3 câu Thông hiểu, 2 câu Vận dụng, 1 câu Vận dụng cao.
+- Câu hỏi bám sát thực tiễn học sinh vùng cao, văn phong trong sáng, tường minh.
+Yêu cầu định dạng đầu ra chuẩn Microsoft Word:
+- Mỗi câu trắc nghiệm nhiều lựa chọn bắt đầu bằng 'Câu X: ' (in đậm), 4 đáp án A. , B. , C. , D. nằm trên từng dòng riêng biệt, không thụt lề bằng phím cách.
+- Gạch chân dưới chữ cái đáp án đúng (ví dụ: <u>A.</u>).
+- Phần cuối lập Bảng đáp án và Hướng dẫn chấm chi tiết.
+              </div>
+            </div>
+          </div>
+
+          <!-- BƯỚC 3 -->
+          <div class="step-card">
+            <div class="step-card-header">
+              <div class="step-badge-group">
+                <div class="step-number">3</div>
+                <div>
+                  <div class="step-title">QUY CHUẨN SOẠN THẢO VÀ ĐỊNH DẠNG TRÊN MICROSOFT WORD</div>
+                  <div style="font-size:0.8rem; color:#64748b;">Quy định bắt buộc về phông chữ, giãn cách, cú pháp nhận diện tự động</div>
+                </div>
+              </div>
+              <span class="step-tag" style="background:#f0fdf4; color:#15803d;">Chuẩn File .docx</span>
+            </div>
+            <div class="step-card-body">
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+                <div style="background:#f8fafc; padding:14px; border-radius:8px; border:1px solid #e2e8f0;">
+                  <strong style="color:#1e40af;">1. Thiết lập trang Word (Page Setup):</strong>
+                  <ul style="margin:8px 0 0 16px; font-size:0.88rem; line-height:1.6;">
+                    <li><strong>Khổ giấy:</strong> A4 (210 x 297 mm)</li>
+                    <li><strong>Căn lề chuẩn:</strong> Trên: 2cm, Dưới: 2cm, Trái: 2.5cm, Phải: 2cm</li>
+                    <li><strong>Phông chữ:</strong> Times New Roman, cỡ 12pt (hoặc 13pt)</li>
+                    <li><strong>Giãn dòng:</strong> Line spacing: 1.15 lines, Spacing Before: 0pt, After: 3pt</li>
+                  </ul>
+                </div>
+
+                <div style="background:#f8fafc; padding:14px; border-radius:8px; border:1px solid #e2e8f0;">
+                  <strong style="color:#15803d;">2. Cú pháp nhận diện tự động khảo thí:</strong>
+                  <ul style="margin:8px 0 0 16px; font-size:0.88rem; line-height:1.6;">
+                    <li><strong>Câu hỏi:</strong> Bắt đầu bằng <code>Câu 1:</code> hoặc <code>Câu 1.</code> (in đậm)</li>
+                    <li><strong>Đáp án:</strong> <code>A. </code>, <code>B. </code>, <code>C. </code>, <code>D. </code> (chữ hoa, có dấu chấm và 1 dấu cách)</li>
+                    <li><strong>Mệnh đề Đúng/Sai:</strong> <code>a) </code>, <code>b) </code>, <code>c) </code>, <code>d) </code></li>
+                    <li><strong>Lưu ý vàng:</strong> <em>Tuyệt đối không dùng tính năng Numbering tự động của Word</em>, hãy để văn bản dạng Text tĩnh để tránh nhảy số khi import.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BƯỚC 4 -->
+          <div class="step-card">
+            <div class="step-card-header">
+              <div class="step-badge-group">
+                <div class="step-number">4</div>
+                <div>
+                  <div class="step-title">MẸO VÀ PHÍM TẮT WORD XỬ LÝ NHANH THẦN TỐC TRONG 30 GIÂY</div>
+                  <div style="font-size:0.8rem; color:#64748b;">Tuyệt chiêu Find & Replace (Ctrl + H) giúp giáo viên chuẩn hóa đề tức thì</div>
+                </div>
+              </div>
+              <span class="step-tag" style="background:#fef2f2; color:#dc2626;">Tuyệt Chiêu 30s</span>
+            </div>
+            <div class="step-card-body">
+              <p>Khi copy đề từ AI về Word, văn bản thường bị thừa khoảng trắng hoặc ngắt dòng lộn xộn. Hãy dùng ngay 3 mẹo <code>Ctrl + H</code> sau:</p>
+
+              <div class="shortcut-grid">
+                <div class="shortcut-card">
+                  <div style="margin-bottom:6px;"><span class="shortcut-key">Ctrl + H</span> rồi gõ <span class="shortcut-key">^w</span></div>
+                  <strong>Xóa toàn bộ khoảng trắng thừa:</strong>
+                  <p style="font-size:0.85rem; color:#475569; margin-top:4px;">
+                    - Ô Find what: <code>^w</code><br>
+                    - Ô Replace with: (gõ 1 dấu cách)<br>
+                    - Bấm <em>Replace All</em>. Loại bỏ 100% lỗi cách 2-3 dấu space thừa!
+                  </p>
+                </div>
+
+                <div class="shortcut-card">
+                  <div style="margin-bottom:6px;"><span class="shortcut-key">Ctrl + H</span> rồi gõ <span class="shortcut-key">^p^p</span></div>
+                  <strong>Xóa toàn bộ dòng trống vô nghĩa:</strong>
+                  <p style="font-size:0.85rem; color:#475569; margin-top:4px;">
+                    - Ô Find what: <code>^p^p</code><br>
+                    - Ô Replace with: <code>^p</code><br>
+                    - Bấm <em>Replace All</em> 2 lần. Đề thi sẽ gọn gàng, tiết kiệm trang in ngay lập tức!
+                  </p>
+                </div>
+
+                <div class="shortcut-card">
+                  <div style="margin-bottom:6px;"><span class="shortcut-key">Table 1x4</span> Ẩn Viền</div>
+                  <strong>Căn 4 đáp án A, B, C, D nằm ngang thẳng tắp:</strong>
+                  <p style="font-size:0.85rem; color:#475569; margin-top:4px;">
+                    Tạo bảng 1 dòng 4 cột, dán 4 đáp án A, B, C, D vào 4 ô, rồi chọn <em>No Border</em>. Đáp án sẽ thẳng tắp và không bao giờ bị nhảy trang!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BƯỚC 5 -->
+          <div class="step-card">
+            <div class="step-card-header">
+              <div class="step-badge-group">
+                <div class="step-number">5</div>
+                <div>
+                  <div class="step-title">KIỂM DUYỆT SƯ PHẠM VÀ ĐẨY LÊN NỀN TẢNG KHẢO THÍ SỐ</div>
+                  <div style="font-size:0.8rem; color:#64748b;">Rào chắn sư phạm người thầy & Đa dạng hóa hình thức kiểm tra</div>
+                </div>
+              </div>
+              <span class="step-tag" style="background:#eff6ff; color:#1d4ed8;">Khảo Thí Đa Kênh</span>
+            </div>
+            <div class="step-card-body">
+              <ul style="margin: 0 0 16px 20px; line-height: 1.7;">
+                <li><strong>Rào chắn kiểm chứng của người thầy (Human-in-the-loop):</strong> Rà soát kỹ thuật ngữ chuyên môn, độ chính xác của các công thức, con số và câu chữ; cân đối độ dài phù hợp với thời lượng kiểm tra 45 phút của học sinh trường THPT Phục Hòa.</li>
+                <li><strong>Triển khai kiểm tra đa kênh linh hoạt:</strong>
+                  <br>• <em>Kênh truyền thống:</em> In trực tiếp từ Word ra giấy thi phát cho học sinh làm tại lớp.
+                  <br>• <em>Kênh số hóa tự động:</em> Kéo thả file Word (.docx) trực tiếp vào <strong>Azota</strong> hoặc <strong>Submite</strong>. Hệ thống sẽ tự động bóc tách từng câu hỏi, tạo bài thi trực tuyến và tự động chấm điểm.
+                  <br>• <em>Chấm trắc nghiệm bằng điện thoại di động:</em> Cho học sinh tô phiếu trả lời trắc nghiệm, giáo viên dùng camera điện thoại quét bài kiểm tra trong 2 giây/bài, xuất điểm thẳng ra file Excel gửi phụ huynh.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+         TAB 3: THƯ VIỆN PROMPT AI SƯ PHẠM
+         ========================================================= -->
+    <section id="tab-prompts" class="tab-content-panel">
+      <div class="doc-sheet">
+        <h2 style="font-size:1.6rem; color:#1e40af; margin-bottom:8px;">THƯ VIỆN PROMPT AI SƯ PHẠM THỰC CHIẾN (COPY 1-CLICK)</h2>
+        <p style="color:#64748b; margin-bottom:24px;">Các câu lệnh mẫu chuẩn hóa dành riêng cho giáo viên các môn học tại Trường THPT Phục Hòa</p>
+
+        <!-- Prompt 1: Ma trận -->
+        <div style="margin-bottom:24px;">
+          <h3 style="font-size:1.1rem; color:#0f172a; margin-bottom:6px;">📌 1. Prompt Lập Khung Ma Trận & Bản Đặc Tả Đề Kiểm Tra</h3>
+          <p style="font-size:0.88rem; color:#475569; margin-bottom:8px;">Dùng khi giáo viên bắt đầu chuẩn bị kế hoạch kiểm tra giữa kỳ hoặc cuối kỳ theo công văn của Sở GD&ĐT.</p>
+          <div class="prompt-box">
+            <button class="prompt-copy-btn" onclick="copyPromptContent(this)">📋 Sao chép</button>
+Bạn là chuyên gia thẩm định đề kiểm tra của Bộ GD&ĐT. Hãy thiết kế cho tôi Khung Ma trận và Bản đặc tả đề kiểm tra Định kỳ (thời gian làm bài: 45 phút) cho:
+- Môn học: [Ví dụ: Tin học / Toán học / Ngữ văn / Lịch sử]
+- Khối lớp: [10 / 11 / 12]
+- Chương / Chủ đề: [Điền tên các bài học trong phạm vi kiểm tra]
+Cấu trúc yêu cầu:
+1. Ma trận đề: Phân bổ rõ 4 mức độ: Nhận biết 40%, Thông hiểu 30%, Vận dụng 20%, Vận dụng cao 10%.
+2. Phân chia thành 3 phần: Phần I (Trắc nghiệm nhiều lựa chọn - 6 điểm), Phần II (Trắc nghiệm Đúng/Sai - 4 điểm).
+3. Bản đặc tả chi tiết: Mỗi đơn vị kiến thức chỉ rõ yêu cầu cần đạt (YCCĐ) theo chương trình GDPT 2018.
+Trình bày kết quả dưới dạng Bảng biểu (Table) rõ ràng, khoa học để tôi dán trực tiếp vào Microsoft Word.
+          </div>
+        </div>
+
+        <!-- Prompt 2: Phần I Nhiều Lựa Chọn -->
+        <div style="margin-bottom:24px;">
+          <h3 style="font-size:1.1rem; color:#0f172a; margin-bottom:6px;">📌 2. Prompt Sinh Câu Hỏi Trắc Nghiệm Nhiều Lựa Chọn (Phần I)</h3>
+          <p style="font-size:0.88rem; color:#475569; margin-bottom:8px;">Dùng để sinh ngân hàng câu hỏi 4 phương án chọn 1 phương án đúng.</p>
+          <div class="prompt-box">
+            <button class="prompt-copy-btn" onclick="copyPromptContent(this)">📋 Sao chép</button>
+Hãy tạo cho tôi [Số lượng câu, ví dụ: 10] câu trắc nghiệm nhiều phương án lựa chọn môn [Tên môn], bài học [Tên bài] lớp [Khối lớp].
+Yêu cầu sư phạm:
+- 4 phương án lựa chọn A, B, C, D có độ dài tương đương nhau, các phương án nhiễu có tính thuyết phục, tránh dùng phương án "Tất cả các đáp án trên đều đúng".
+- Nội dung câu hỏi gần gũi với đối tượng học sinh vùng cao, câu chữ rõ ràng, không tối nghĩa.
+Định dạng Word bắt buộc:
+Câu [Số]: [Nội dung câu hỏi]
+A. [Phương án A]
+B. [Phương án B]
+C. [Phương án C]
+D. [Phương án D]
+(Gạch chân phương án đúng: <u>A.</u> hoặc <u>B.</u>)
+Cuối cùng tổng hợp Bảng đáp án và giải thích ngắn gọn.
+          </div>
+        </div>
+
+        <!-- Prompt 3: Phần II Đúng / Sai -->
+        <div style="margin-bottom:24px;">
+          <h3 style="font-size:1.1rem; color:#0f172a; margin-bottom:6px;">📌 3. Prompt Sinh Câu Hỏi Trắc Nghiệm Đúng / Sai (Phần II)</h3>
+          <p style="font-size:0.88rem; color:#475569; margin-bottom:8px;">Dạng câu hỏi mới đánh giá tư duy toàn diện và chống đoán mò.</p>
+          <div class="prompt-box">
+            <button class="prompt-copy-btn" onclick="copyPromptContent(this)">📋 Sao chép</button>
+Hãy soạn thảo [Số lượng, ví dụ: 2] câu trắc nghiệm Đúng/Sai theo định dạng đề thi mới nhất của Bộ GD&ĐT môn [Tên môn], lớp [Lớp], chủ đề [Chủ đề].
+Cấu trúc mỗi câu:
+- Đưa ra 1 tình huống, đoạn ngữ liệu hoặc ngữ cảnh thực tế (khoảng 3 - 5 dòng).
+- Sau đó đưa ra 4 nhận định/mệnh đề độc lập ký hiệu là a), b), c), d).
+- Trong 4 mệnh đề phải có sự đan xen giữa Đúng và Sai (không được để tất cả đều Đúng hoặc tất cả đều Sai).
+- Cung cấp bảng kết luận: Mệnh đề nào ĐÚNG, Mệnh đề nào SAI và lập luận sư phạm giải thích vì sao.
+          </div>
+        </div>
+
+        <!-- Prompt 4: Rà soát phát hiện lỗi kiến thức -->
+        <div style="margin-bottom:24px;">
+          <h3 style="font-size:1.1rem; color:#0f172a; margin-bottom:6px;">📌 4. Prompt Rà Soát Phát Hiện Lỗi Kiến Thức & Ảo Giác AI (Audit Prompt)</h3>
+          <p style="font-size:0.88rem; color:#475569; margin-bottom:8px;">Dán lại bộ câu hỏi đã tạo vào đây để AI đóng vai trò phản biện, tìm ra sai sót trước khi in đề.</p>
+          <div class="prompt-box">
+            <button class="prompt-copy-btn" onclick="copyPromptContent(this)">📋 Sao chép</button>
+Tôi sẽ cung cấp cho bạn một bộ đề kiểm tra trắc nghiệm dưới đây. Với vai trò là một Chuyên gia Thẩm định Đề thi khó tính, bạn hãy thực hiện kiểm tra phản biện nghiêm ngặt các tiêu chí sau:
+1. Có câu hỏi nào có 2 đáp án cùng đúng hoặc không có đáp án nào đúng không?
+2. Có câu hỏi nào bị lỗi số liệu, công thức toán/lý/hóa học, hoặc nhầm lẫn mốc lịch sử không?
+3. Các câu hỏi nhận biết có bị quá tầm học sinh lớp [Khối lớp] trường THPT Phục Hòa không?
+4. Đưa ra phương án chỉnh sửa chi tiết cho những câu chưa chuẩn.
+Dưới đây là nội dung đề thi cần rà soát:
+[DÁN ĐỀ THI CỦA THẦY/CÔ VÀO ĐÂY]
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+         TAB 4: CÔNG CỤ CHUẨN HÓA CÚ PHÁP WORD (FORMATTER & VALIDATOR)
+         ========================================================= -->
+    <section id="tab-formatter" class="tab-content-panel">
+      <div class="doc-sheet">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-bottom:14px;">
+          <div>
+            <span class="step-tag" style="background:#f0fdf4; color:#15803d;">Công Cụ Tương Tác Trực Tuyến</span>
+            <h2 style="font-size:1.6rem; color:#1e40af; margin-top:4px;">CÔNG CỤ CHUẨN HÓA CÚ PHÁP ĐỀ THI TRÊN WORD & AZOTA</h2>
+            <p style="color:#64748b;">Tự động chuẩn hóa câu hỏi thô từ AI thành format Word chuẩn chỉ với 1 click</p>
+          </div>
+          <button class="btn btn-outline" onclick="loadSampleQuizToFormatter()">
+            📋 Tải Dữ Liệu Mẫu Thử Nghiệm
+          </button>
+        </div>
+
+        <p style="font-size:0.92rem; color:#475569; margin-bottom:16px;">
+          <strong>Hướng dẫn:</strong> Thầy cô chỉ cần dán nội dung câu hỏi thô nhận được từ Gemini, ChatGPT hoặc tài liệu cũ vào khung bên trái. Hệ thống sẽ tự động làm sạch khoảng trắng, chuẩn hóa cú pháp <code>Câu 1:</code>, <code>A. </code>, <code>B. </code>, <code>C. </code>, <code>D. </code> và chuẩn bị sẵn sàng để thầy cô dán vào Word!
+        </p>
+
+        <!-- Khung làm việc 2 cột -->
+        <div class="tool-workspace">
+          <!-- Cột Trái: Nhập liệu -->
+          <div class="tool-pane">
+            <div class="tool-pane-title">
+              <span>📥 Khung Nhập Nội Dung Thô</span>
+              <button class="btn btn-outline" style="padding:4px 8px; font-size:0.75rem;" onclick="clearFormatter()">Xóa trắng</button>
+            </div>
+            <textarea id="raw-quiz-input" class="tool-textarea" placeholder="Dán nội dung câu hỏi thô từ ChatGPT, Gemini hoặc Word tại đây... Ví dụ:
+1/ Thiết bị nào sau đây...
+A. Màn hình
+B. Bàn phím..."></textarea>
+            <div class="tool-actions-bar">
+              <button class="btn btn-primary" onclick="formatQuizText()">
+                ⚡ Tự Động Chuẩn Hóa Cú Pháp Word
+              </button>
+            </div>
+          </div>
+
+          <!-- Cột Phải: Kết quả chuẩn hóa -->
+          <div class="tool-pane">
+            <div class="tool-pane-title">
+              <span>📤 Kết Quả Chuẩn Hóa Microsoft Word / Azota</span>
+              <button class="btn btn-gold" style="padding:4px 10px; font-size:0.8rem;" onclick="copyFormattedOutput()">
+                📋 Sao Chép Chuẩn Word
+              </button>
+            </div>
+            <textarea id="formatted-quiz-output" class="tool-textarea" readonly placeholder="Nội dung chuẩn hóa sẽ hiển thị tại đây..."></textarea>
+            <div id="validator-stats" class="validation-stats">
+              <span>Trạng thái: Sẵn sàng nhập liệu</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+         TAB 5: ĐỀ THI MẪU CHUẨN HOÀN CHỈNH
+         ========================================================= -->
+    <section id="tab-sample" class="tab-content-panel">
+      <div class="doc-sheet">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-bottom:20px;">
+          <div>
+            <span class="step-tag">Bản Mẫu Chuẩn Quy Cách</span>
+            <h2 style="font-size:1.6rem; color:#1e40af; margin-top:6px;">ĐỀ KIỂM TRA ĐỊNH KỲ MINH HỌA (MẪU CHUẨN BỘ GD&ĐT)</h2>
+            <p style="color:#64748b;">Môn: Tin Học 10 — Chương trình GDPT 2018 (Kết nối tri thức) — Năm học 2026 - 2027</p>
+          </div>
+          <div style="display:flex; gap:10px;">
+            <a href="Ban_Chuan_Quy_Trinh_Tao_De_Kiem_Tra_Word_AI.docx" download class="btn btn-accent">
+              📥 Tải File Word Đề Thi
+            </a>
+          </div>
+        </div>
+
+        <!-- Khung xem trước đề thi chuẩn Word -->
+        <div style="background:#ffffff; border:1px solid #cbd5e1; border-radius:8px; padding:32px; font-family:'Times New Roman', serif; font-size:1.05rem; box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+          
+          <!-- Đầu trang đề thi -->
+          <div style="display:flex; justify-content:space-between; margin-bottom:20px; text-align:center;">
+            <div style="width:45%;">
+              <div>SỞ GD&ĐT CAO BẰNG</div>
+              <div style="font-weight:bold;">TRƯỜNG THPT PHỤC HÒA</div>
+              <div style="font-style:italic; font-size:0.9rem;">(Đề kiểm tra chính thức)</div>
+            </div>
+            <div style="width:50%;">
+              <div style="font-weight:bold;">KIỂM TRA ĐỊNH KỲ NĂM HỌC 2026 - 2027</div>
+              <div>Môn: TIN HỌC — KHỐI 10</div>
+              <div style="font-style:italic; font-size:0.9rem;">Thời gian làm bài: 45 phút (không kể thời gian giao đề)</div>
+            </div>
+          </div>
+
+          <div style="border-top:1px solid #000; border-bottom:1px solid #000; padding:8px 0; margin-bottom:24px; font-size:0.95rem;">
+            Họ và tên học sinh: ............................................................................ Lớp: 10A...... &nbsp; &nbsp; &nbsp; &nbsp; Số báo danh: ....................
+          </div>
+
+          <!-- PHẦN I -->
+          <div style="margin-bottom:24px;">
+            <div style="font-weight:bold; color:#1e40af; margin-bottom:12px;">
+              PHẦN I. CÂU TRẮC NGHIỆM NHIỀU PHƯƠNG ÁN LỰA CHỌN (6,0 điểm).
+            </div>
+            <p style="font-style:italic; font-size:0.92rem; margin-bottom:14px;">Thí sinh trả lời từ Câu 1 đến Câu 4. Mỗi câu hỏi thí sinh chỉ chọn một phương án.</p>
+
+            <div style="margin-bottom:16px;">
+              <p><strong>Câu 1:</strong> Thiết bị nào sau đây thuộc nhóm thiết bị vào (Input Devices) của hệ thống máy tính?</p>
+              <div style="margin: 6px 0 0 20px;">
+                <p>A. Màn hình máy tính.</p>
+                <p>B. Máy in laser màu.</p>
+                <p><u>C. Bàn phím và chuột quang.</u> (Đáp án đúng)</p>
+                <p>D. Loa và tai nghe nghe nhạc.</p>
+              </div>
+            </div>
+
+            <div style="margin-bottom:16px;">
+              <p><strong>Câu 2:</strong> Trong chuyển đổi số và ứng dụng Trí tuệ nhân tạo (AI), phát biểu nào sau đây là <strong>chính xác nhất</strong>?</p>
+              <div style="margin: 6px 0 0 20px;">
+                <p>A. Trí tuệ nhân tạo có thể thay thế hoàn toàn vai trò của người thầy giáo trong mọi hoạt động sư phạm.</p>
+                <p><u>B. AI là công cụ hỗ trợ đắc lực giúp nâng cao năng suất dạy học, nhưng quyết định cuối cùng vẫn thuộc về tư duy sư phạm của người thầy.</u> (Đáp án đúng)</p>
+                <p>C. Giáo viên không cần kiểm tra lại độ chính xác của các kiến thức do AI cung cấp.</p>
+                <p>D. AI chỉ được sử dụng cho các mục đích giải trí và trò chơi điện tử.</p>
+              </div>
+            </div>
+
+            <div style="margin-bottom:16px;">
+              <p><strong>Câu 3:</strong> Biện pháp nào sau đây giúp bảo vệ an toàn thông tin cá nhân và tài khoản giáo dục của học sinh hiệu quả nhất?</p>
+              <div style="margin: 6px 0 0 20px;">
+                <p>A. Đặt mật khẩu đơn giản, dễ nhớ như ngày tháng năm sinh hoặc "123456".</p>
+                <p>B. Chia sẻ tài khoản và mật khẩu cho các bạn cùng lớp để cùng nhau đăng nhập làm bài.</p>
+                <p><u>C. Đặt mật khẩu mạnh (gồm chữ hoa, chữ thường, số, ký tự đặc biệt) và kích hoạt xác thực hai yếu tố (2FA).</u> (Đáp án đúng)</p>
+                <p>D. Đăng nhập tài khoản trên các máy tính công cộng và không cần đăng xuất khi rời đi.</p>
+              </div>
+            </div>
+
+            <div style="margin-bottom:16px;">
+              <p><strong>Câu 4:</strong> Khi tìm kiếm tài liệu học tập trên mạng Internet, để tránh tiếp nhận thông tin giả (fake news), học sinh nên:</p>
+              <div style="margin: 6px 0 0 20px;">
+                <p>A. Tin tưởng ngay vào tất cả các bài viết có nhiều lượt thích (like) và chia sẻ (share) trên mạng xã hội.</p>
+                <p><u>B. Kiểm chứng nguồn tin từ các cổng thông tin điện tử chính thống của Nhà nước, Bộ GD&ĐT hoặc sách giáo khoa.</u> (Đáp án đúng)</p>
+                <p>C. Sao chép nguyên văn bài viết trên mạng vào bài làm kiểm tra.</p>
+                <p>D. Chia sẻ ngay bài viết lên nhóm lớp trước khi tìm hiểu tính chính xác.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PHẦN II -->
+          <div style="margin-bottom:24px;">
+            <div style="font-weight:bold; color:#1e40af; margin-bottom:12px;">
+              PHẦN II. CÂU TRẮC NGHIỆM ĐÚNG / SAI (4,0 điểm).
+            </div>
+            <p style="font-style:italic; font-size:0.92rem; margin-bottom:14px;">Thí sinh trả lời Câu 5. Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh chọn Đúng hoặc Sai.</p>
+
+            <div style="margin-bottom:16px;">
+              <p><strong>Câu 5:</strong> Trong buổi sinh hoạt chuyên đề về "Đạo đức số và văn hóa sử dụng mạng xã hội tại trường THPT Phục Hòa", một nhóm học sinh đã thảo luận về các tình huống thực tiễn. Xét tính Đúng / Sai của các phát biểu sau:</p>
+              <div style="margin: 8px 0 0 20px; line-height: 1.8;">
+                <p><strong>a)</strong> Học sinh sử dụng ứng dụng AI (như ChatGPT, Gemini) để gợi ý ý tưởng làm bài tập, sau đó tự mình phân tích và hoàn thiện bài làm là hành vi học tập tích cực. ➔ <span style="color:#15803d; font-weight:bold;">ĐÚNG</span></p>
+                <p><strong>b)</strong> Học sinh dùng AI viết toàn bộ bài văn phân tích tác phẩm văn học rồi nộp cho thầy cô chấm điểm mà không cần tự suy nghĩ là hoàn toàn phù hợp với chuẩn mực trung thực trong học tập. ➔ <span style="color:#dc2626; font-weight:bold;">SAI</span></p>
+                <p><strong>c)</strong> Khi phát hiện bạn học bị bôi nhọ hoặc có bài viết kích động bạo lực học đường trên mạng xã hội, học sinh cần kịp thời báo cáo với giáo viên chủ nhiệm hoặc Đoàn trường để xử lý an toàn. ➔ <span style="color:#15803d; font-weight:bold;">ĐÚNG</span></p>
+                <p><strong>d)</strong> Học sinh có quyền cắm bất kỳ thiết bị USB cá nhân nào vào máy tính phòng hội đồng hoặc phòng chuyên môn của nhà trường mà không cần xin phép. ➔ <span style="color:#dc2626; font-weight:bold;">SAI</span></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- BẢNG ĐÁP ÁN & HƯỚNG DẪN CHẤM -->
+          <div style="border-top:2px dashed #94a3b8; padding-top:16px; margin-top:24px;">
+            <h4 style="color:#0f172a; text-transform:uppercase; margin-bottom:10px;">HƯỚNG DẪN CHẤM VÀ THANG ĐIỂM</h4>
+            
+            <table class="styled-table" style="margin-top:8px;">
+              <thead>
+                <tr>
+                  <th style="width:20%;">Phần thi</th>
+                  <th style="width:40%;">Đáp án chuẩn</th>
+                  <th style="width:40%;">Quy tắc tính điểm</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Phần I</strong><br>(Trắc nghiệm nhiều lựa chọn)</td>
+                  <td>
+                    • Câu 1: <strong>C</strong><br>
+                    • Câu 2: <strong>B</strong><br>
+                    • Câu 3: <strong>C</strong><br>
+                    • Câu 4: <strong>B</strong>
+                  </td>
+                  <td>Mỗi câu trả lời đúng được <strong>1,5 điểm</strong> (Tổng: 6,0 điểm).</td>
+                </tr>
+                <tr>
+                  <td><strong>Phần II</strong><br>(Trắc nghiệm Đúng/Sai)</td>
+                  <td>
+                    <strong>Câu 5:</strong><br>
+                    • Ý a: <strong>Đúng</strong><br>
+                    • Ý b: <strong>Sai</strong><br>
+                    • Ý c: <strong>Đúng</strong><br>
+                    • Ý d: <strong>Sai</strong>
+                  </td>
+                  <td>
+                    - Đúng 1 ý: 0,5 điểm.<br>
+                    - Đúng 2 ý: 1,5 điểm.<br>
+                    - Đúng 3 ý: 2,5 điểm.<br>
+                    - Đúng cả 4 ý: <strong>4,0 điểm</strong>.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+         TAB 6: KẾ HOẠCH & LỜI DẪN MC SINH HOẠT CHI BỘ
+         ========================================================= -->
+    <section id="tab-plan-mc" class="tab-content-panel">
+      <div class="doc-sheet">
+        <h2 style="font-size:1.6rem; color:#1e40af; margin-bottom:6px;">KẾ HOẠCH TỔ CHỨC & LỜI DẪN CHƯƠNG TRÌNH MC</h2>
+        <p style="color:#64748b; margin-bottom:24px;">Trọn bộ tài liệu điều hành buổi sinh hoạt chuyên đề Chi bộ tháng 11/2026 (ngày 03/11/2026)</p>
+
+        <!-- Kế hoạch tóm tắt -->
+        <div class="part-card" style="margin-bottom:24px;">
+          <div class="part-card-title">
+            📋 Kế Hoạch Tổ Chức Sinh Hoạt Chuyên Đề 1 (Số: 03-KH/CB)
+          </div>
+          <ul style="margin: 8px 0 16px 20px; line-height: 1.7;">
+            <li><strong>Thời gian tổ chức:</strong> Vào hồi 14 giờ 00 phút, Thứ Ba, ngày <strong>03 tháng 11 năm 2026</strong>.</li>
+            <li><strong>Địa điểm:</strong> Phòng Hội đồng sư phạm Trường THPT Phục Hòa.</li>
+            <li><strong>Chủ trì:</strong> Đồng chí <strong>Hoàng Trung Kiên</strong> — Bí thư Chi bộ, Hiệu trưởng nhà trường.</li>
+            <li><strong>Thành phần tham dự:</strong> Toàn thể các đồng chí Đảng viên trong Chi bộ và đại diện Ban Chấp hành Đoàn trường, các Tổ trưởng Chuyên môn.</li>
+          </ul>
+        </div>
+
+        <!-- Lời dẫn MC -->
+        <div class="part-card">
+          <div class="part-card-title">
+            🎙️ Kịch Bản & Lời Dẫn Của Người Dẫn Chương Trình (MC)
+          </div>
+
+          <div style="margin: 12px 0;">
+            <h4 style="color:#991b1b; margin-bottom:4px;">1. Phần Ổn định tổ chức & Tuyên bố lý do:</h4>
+            <div class="callout-box info" style="margin:4px 0 16px 0;">
+              “Kính thưa các đồng chí Đảng viên trong Chi bộ Trường THPT Phục Hòa!<br>
+              Thực hiện Chương trình công tác năm 2026 của Chi bộ và Nghị quyết của Đảng ủy về đẩy mạnh chuyển đổi số trong giáo dục; hôm nay, ngày 03/11/2026, Chi bộ Trường THPT Phục Hòa long trọng tổ chức buổi Sinh hoạt chuyên đề Quý IV năm 2026 với chủ đề: <strong>'Phát huy vai trò tiên phong, gương mẫu của đảng viên trong chuyển đổi số và ứng dụng trí tuệ nhân tạo trong quản lý, dạy học năm học 2026 – 2027'</strong>. Đó chính là lý do của buổi sinh hoạt hôm nay!”
+            </div>
+
+            <h4 style="color:#991b1b; margin-bottom:4px;">2. Giới thiệu đại biểu & Thành phần:</h4>
+            <div class="callout-box info" style="margin:4px 0 16px 0;">
+              “Về dự và chỉ đạo buổi sinh hoạt chuyên đề hôm nay, tôi xin trân trọng giới thiệu:<br>
+              - Đồng chí <strong>Hoàng Trung Kiên</strong> — Bí thư Chi bộ, Hiệu trưởng nhà trường.<br>
+              - Cùng toàn thể các đồng chí trong Ban Chi ủy và các đồng chí Đảng viên đang công tác tại các tổ chuyên môn, tổ văn phòng trường THPT Phục Hòa đã có mặt đông đủ. Đề nghị chúng ta nhiệt liệt hoan nghênh!”
+            </div>
+
+            <h4 style="color:#991b1b; margin-bottom:4px;">3. Tiến trình nội dung buổi sinh hoạt:</h4>
+            <ol style="margin-left:24px; line-height:1.7;">
+              <li>Đồng chí Bí thư Chi bộ khai mạc, quán triệt mục đích, yêu cầu của chuyên đề.</li>
+              <li>Báo cáo viên trình bày nội dung trọng tâm Chuyên đề 1 và giải pháp ứng dụng AI.</li>
+              <li>Báo cáo viên cốt cán thực hành Demo trực tiếp: <strong>Quy trình 5 bước tạo nhanh đề kiểm tra trên Microsoft Word bằng AI</strong>.</li>
+              <li>Các tổ đảng và đảng viên thảo luận, trao đổi, đóng góp ý kiến thực tiễn.</li>
+              <li>Đồng chí Bí thư Chi bộ kết luận, chỉ đạo và thông qua Nghị quyết chuyên đề.</li>
+              <li>Đánh giá, chấm điểm chất lượng buổi sinh hoạt chi bộ theo thang điểm của Đảng.</li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Phiếu chấm điểm -->
+        <div class="part-card" style="margin-top:24px;">
+          <div class="part-card-title">
+            ⭐ Thang Điểm Đánh Giá Chất Lượng Sinh Hoạt Chi Bộ Chuyên Đề (100 Điểm)
+          </div>
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Tiêu chí đánh giá</th>
+                <th>Điểm tối đa</th>
+                <th>Yêu cầu cụ thể</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1. Công tác chuẩn bị</strong></td>
+                <td><strong>20 điểm</strong></td>
+                <td>Chi ủy họp duyệt kế hoạch, có báo cáo chuyên đề chi tiết bằng văn bản, phân công rõ người báo cáo.</td>
+              </tr>
+              <tr>
+                <td><strong>2. Tiến trình và chất lượng sinh hoạt</strong></td>
+                <td><strong>50 điểm</strong></td>
+                <td>Nội dung bám sát thực tiễn nhà trường, có tính Đảng, tính lãnh đạo và giáo dục cao; đảng viên thảo luận sôi nổi, có demo thực hành thiết thực.</td>
+              </tr>
+              <tr>
+                <td><strong>3. Kết quả và Nghị quyết chuyên đề</strong></td>
+                <td><strong>30 điểm</strong></td>
+                <td>Ban hành được các sản phẩm cụ thể (kế hoạch bài dạy mẫu, ngân hàng đề thi Word, quy chế an toàn thông tin); 100% đảng viên nhất trí thông qua.</td>
+              </tr>
+            </tbody>
+          </table>
+          <div style="font-size:0.85rem; color:#64748b; font-style:italic;">
+            * Xếp loại: Tốt (Từ 90 - 100 điểm) | Khá (Từ 70 - dưới 90 điểm) | Trung bình (50 - dưới 70 điểm) | Kém (Dưới 50 điểm).
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Thanh Công Cụ Nổi (Floating Toolbar) -->
+  <div class="floating-doc-actions">
+    <button class="btn btn-outline" onclick="adjustFontSize(-1)" title="Giảm cỡ chữ">A -</button>
+    <button class="btn btn-outline" onclick="resetFontSize()" title="Cỡ chữ mặc định">A</button>
+    <button class="btn btn-outline" onclick="adjustFontSize(1)" title="Tăng cỡ chữ">A +</button>
+    <button class="btn btn-primary" onclick="window.print()" title="In văn bản ra giấy / xuất PDF">🖨️ In / PDF</button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h3>CHI BỘ TRƯỜNG THPT PHỤC HÒA</h3>
+        <p><strong>Cơ quan chủ quản:</strong> Đảng bộ xã Phục Hòa — Huyện ủy Quảng Hòa — Tỉnh Cao Bằng.</p>
+        <p><strong>Địa chỉ:</strong> Trường THPT Phục Hòa, xã Phục Hòa, huyện Quảng Hòa, tỉnh Cao Bằng.</p>
+        <p><strong>Bí thư Chi bộ:</strong> Đồng chí Hoàng Trung Kiên.</p>
+      </div>
+      <div class="footer-col">
+        <h3>TÀI LIỆU CHUYÊN ĐỀ</h3>
+        <ul>
+          <li><a href="javascript:void(0)" onclick="switchTab('report')">Toàn văn Báo cáo Chuyên đề 1</a></li>
+          <li><a href="javascript:void(0)" onclick="switchTab('guide')">Quy trình 5 bước tạo đề Word</a></li>
+          <li><a href="javascript:void(0)" onclick="switchTab('prompts')">Thư viện Prompt AI Sư phạm</a></li>
+          <li><a href="javascript:void(0)" onclick="switchTab('formatter')">Công cụ chuẩn hóa cú pháp Word</a></li>
+          <li><a href="javascript:void(0)" onclick="switchTab('sample')">Đề thi mẫu chuẩn Bộ GD&ĐT</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>TẢI VỀ MÁY TÍNH</h3>
+        <ul>
+          <li><a href="Ban_Chuan_Quy_Trinh_Tao_De_Kiem_Tra_Word_AI.docx" download>📥 Bản Chuẩn Tạo Đề Word (.docx)</a></li>
+          <li><a href="Bao_Cao_Sinh_Hoat_Chuyen_De_1_THPT_Phuc_Hoa.docx" download>📥 Báo Cáo Chuyên Đề 1 Word (.docx)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Chi bộ Trường THPT Phục Hòa — Phát huy vai trò tiên phong của Đảng viên trong Kỷ nguyên Số và Trí tuệ Nhân tạo.
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
